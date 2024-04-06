@@ -29,7 +29,7 @@ class ImageHelper extends ImageValidator {
 
     const test = await Cloudinary.image(res.public_id, {
       transformation: [
-        { width: 500, height: 500, gravity: "faces", crop: "thumb" },
+        { width: 500, height: 500, gravity: "face", crop: "thumb" },
         {overlay: CloudinaryConfig.backgroundImagePublicUrl}
       ],
     });

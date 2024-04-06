@@ -7,9 +7,9 @@ const upload = multer();
 class ImageRoute {
   static async processImage(req, res) {
     const profilePicture = req.file;
+    const tempPath = './public/temp'
     try {
 
-      const tempPath = './public/temp'
 
         
         // Check if the File passed is valid Image.
